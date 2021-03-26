@@ -21,6 +21,6 @@
         </style>
     </head>
     <body class="antialiased">
-    Hello from JoWe <?php echo url('/');?>
+    Name is: {{$t ?? ''}}
     </body>
 </html>

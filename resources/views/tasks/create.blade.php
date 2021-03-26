@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>JoWe</title>
+        <title>Create Task</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,6 +21,17 @@
         </style>
     </head>
     <body class="antialiased">
-    Hello from JoWe <?php echo url('/');?>
+    <h1>Last submission</h1>
+    <h1>Create a task</h1>
+    <form action="/tasks" method="POST" id='ftask'>
+    	@csrf
+    	<p>Label:</p>
+    	<input type="text" id="label" name="label"/>
+    	<p>Description:</p>
+    	<input type="text" id="description" name="description"/>
+    	<br/>
+    	<input type="submit"/>
+    </form>
+    <p>Today is {{ $dow }}</p>
     </body>
 </html>
