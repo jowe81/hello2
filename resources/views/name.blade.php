@@ -21,6 +21,6 @@
         </style>
     </head>
     <body class="antialiased">
-    Name is : {{$t ?? ''}}
+    Name is this: {{$t ?? ''}}
     </body>
 </html>
